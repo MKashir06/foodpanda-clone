@@ -1,0 +1,325 @@
+:root {
+  --color-primary: #ff2b85;
+  --color-primary-hover: #c21760;
+  --color-secondary: #ffffff;
+  --color-text: #231f20;
+}
+
+/* Header Start */
+#aboutHeader {
+  overflow: hidden;
+}
+
+#aboutHeader .aboutHeaderpic {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(9, 9, 9, 0.5)),
+    url("../assets/images/about-foodpanda.jpeg") no-repeat center center/cover;
+  height: 90vh;
+  width: 100vw;
+  color: var(--color-light);
+  position: relative;
+  z-index: -1;
+}
+
+#aboutHeader .aboutHeaderpic .aboutHeadertext {
+  position: absolute;
+  bottom: 12rem;
+  left: 12rem;
+}
+
+#aboutHeader .aboutHeaderpic .aboutHeadertext h1 {
+  font-size: 6rem;
+  color: var(--color-secondary);
+}
+/* Header End */
+
+#main .main-1 {
+  padding: 6rem 12rem;
+}
+
+#main .main-1 h3 {
+  font-size: 2.7rem;
+  color: #343b46;
+  margin-bottom: 3rem;
+}
+
+#main .main-1 p {
+  font-size: 1.6rem;
+  font-weight: 400rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 40rem;
+}
+
+#main .bg-color {
+  background-color: #f5f5f6;
+}
+
+#main .bg-color .main-2 {
+  display: flex;
+  gap: 6rem;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+#main .bg-color .main-2 .pic1 img {
+  object-fit: contain;
+
+  width: 100%;
+}
+
+#main .bg-color .main-2 .pic1 {
+  flex: 1;
+}
+
+#main .bg-color .main-2 .text1 {
+  flex: 1;
+}
+
+#main .bg-color .main-2 .text1 h1 {
+  margin-top: 8rem;
+  font-size: 4rem;
+  color: #343b46;
+  text-align: start;
+}
+
+#main .bg-color .main-2 .text1 p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+#main .bg-color .main-2 .text1 .arrow_Page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 15rem;
+  font-size: 2rem;
+}
+
+#main .bg-color .main-2 .text1 .arrow_Page .page {
+  height: 0.7rem;
+  width: 0.7rem;
+  background: #c9b9b9;
+  border-radius: 90rem;
+}
+
+#main .bg-color .main-2 .text1 .arrow_Page .page1 {
+  background: #000000;
+}
+
+#main .main-3 h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #343b46;
+  margin-top: 5rem;
+}
+
+#main .main-3 .buttons {
+  display: flex;
+  margin: 0rem auto;
+  padding: 5rem 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#main .main-3 .buttons .btn1:hover,
+#main .main-3 .buttons .btn2:hover,
+#main .main-3 .buttons .btn3:hover,
+#main .main-3 .buttons .btn5:hover,
+#main .main-3 .buttons .btn6:hover,
+#main .main-3 .buttons .btn7:hover {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-secondary);
+}
+
+#main .main-3 .buttons .btn1 {
+  width: 24rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn2 {
+  width: 12rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn3 {
+  width: 14rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn4 {
+  width: 22rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background-color: black;
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn4:hover {
+  border: 0.3rem solid var(--color-primary);
+}
+
+#main .main-3 .buttons .btn5 {
+  width: 24rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn6 {
+  width: 18rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-3 .buttons .btn7 {
+  width: 20rem;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  border: 0.2rem solid black;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+
+#main .main-4 {
+  display: flex;
+  gap: 6rem;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+#main .main-4 .pic2 img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#main .main-4 .pic2 {
+  flex: 1;
+}
+
+#main .main-4 .text2 {
+  flex: 1;
+}
+
+#main .main-4 .text2 h1 {
+  margin-top: 8rem;
+  font-size: 4rem;
+  color: #343b46;
+  text-align: start;
+}
+
+#main .main-4 .text2 p {
+  font-size: 1.8rem;
+  font-weight: 400rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#main .main-5 {
+  display: flex;
+  gap: 5rem;
+  margin: 0 auto;
+  max-width: 130rem;
+  margin-bottom: 10rem;
+  margin-left: 12rem;
+  margin-top: 12rem;
+}
+
+#main .main-5 .pic3 img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#main .main-5 .pic3 {
+  flex: 1.2;
+}
+
+#main .main-5 .text-3 {
+  flex: 1;
+}
+
+#main .main-5 .text-3 h1 {
+  margin-top: 6rem;
+  font-size: 4rem;
+  color: #343b46;
+}
+
+#main .main-5 .text-3 p {
+  font-size: 1.6rem;
+  font-weight: 400rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+}
+
+#main .main-5 .text-3 button {
+  width: 12rem;
+  height: 4rem;
+  border: 0.2rem solid var(--color-primary);
+  font-size: 1.8rem;
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: all 0.2s ease-in;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+#main .main-5 .text-3 button:hover {
+  background-color: #ba2060;
+  border: none;
+  color: var(--color-secondary);
+}

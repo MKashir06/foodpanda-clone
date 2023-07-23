@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+}
+
+:root {
+  --color-primary: #ff2b85;
+  --color-primary-hover: #c21760;
+  --color-secondary: #ffffff;
+  --color-text: #231f20;
+}
+
+/* Utility Classes */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 1.7rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5rem;
+  padding: 1.25rem 1.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+/* Navbar Start */
+#navbar {
+  background-color: var(--color-secondary);
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .menuContainer ul {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .menuContainer ul li {
+  margin-left: 2rem;
+  padding: 2rem 0;
+  border-top: 0.2rem solid var(--color-secondary);
+  transition: all 0.1s ease-in;
+}
+#navbar .menuContainer ul li:first-child {
+  margin-left: 0;
+}
+#navbar .menuContainer ul li:nth-child(7),
+#navbar .menuContainer ul li:last-child {
+  padding: 0;
+  border: none;
+}
+#navbar .menuContainer ul li:nth-child(7):hover,
+#navbar .menuContainer ul li:last-child:hover {
+  border: none;
+}
+#navbar .menuContainer ul li:hover {
+  border-top: 0.2rem solid var(--color-primary);
+}
+
+#navbar .menuContainer ul .active {
+  border-top: 0.2rem solid var(--color-primary);
+}
+
+#navbar .menuContainer ul li a {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#navbar .menuContainer ul li button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5rem;
+  padding: 1.25rem 1.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+#navbar .menuContainer ul li button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+#navbar .menuContainer ul li i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* Navbar End */
+
+/* Header Start */
+#header {
+  width: 100%;
+  position: relative;
+}
+
+#header .videoContainer,
+#header .imageContainer {
+  position: relative;
+  height: 65rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .imageContainer .img {
+  background: linear-gradient(#ffffff20, #00000080),
+    url("../assets/images/fp-contact-1.jpeg") no-repeat center center/cover;
+  height: 65rem;
+  width: 100%;
+}
+#header .imageContainer.newsroom .img {
+  background: linear-gradient(#ffffff20, #00000080),
+    url("../assets/images/newsroom-foodpanda.jpg") no-repeat center center/cover;
+}
+
+#header .videoContainer .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#header h1 {
+  position: absolute;
+  bottom: 8rem;
+  left: 10rem;
+  font-size: 6.5rem;
+  color: #fff;
+}
+/* Header End */
+
+/* Main Start */
+#mainSection {
+  /* max-width: 130rem; */
+  margin: 0 auto;
+}
+
+/* Section-01 Start */
+#mainSection #sec-01 {
+  max-width: 78rem;
+  margin-left: 9rem;
+}
+
+#mainSection #sec-01 h2 {
+  line-height: 4.5rem;
+  font-size: 3.6rem;
+  padding: 12rem 0;
+  color: var(--color-text);
+  font-weight: 700;
+  overflow: hidden;
+}
+/* Section-01 End */
+
+/* Section-02 & Section-04 Start */
+#sec-02,
+#sec-04 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+#sec-02 .sec2ImgContainer,
+#sec-04 .sec4ImgContainer {
+  flex: 1.1;
+}
+
+#sec-02 .sec2ImgContainer img,
+#sec-04 .sec4ImgContainer img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#sec-02 .sec2ContentContainer,
+#sec-04 .sec4ContentContainer {
+  flex: 1;
+  margin-left: 5rem;
+}
+
+#sec-02 .sec2ContentContainer h2,
+#sec-04 .sec4ContentContainer h2 {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  color: var(--color-text);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#sec-02 .sec2ContentContainer p,
+#sec-04 .sec4ContentContainer p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-text);
+  font-weight: 400;
+  padding: 2.5rem 0;
+}
+
+#sec-02 .sec2ContentContainer button,
+#sec-04 .sec4ContentContainer button {
+  padding: 1.25rem 2.5rem;
+}
+
+#sec-02 .sec2ContentContainer button:hover,
+#sec-04 .sec4ContentContainer button:hover {
+  background-color: var(--color-primary-hover);
+}
+/* Section-02 & Section-04 End */
+
+/* Section-03 & Section-06 Start */
+#sec-03,
+#sec-06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rem 0;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+#sec-03 .sec3ImgContainer,
+#sec-06 .sec6ImgContainer {
+  flex: 1;
+}
+
+#sec-03 .sec3ImgContainer img,
+#sec-06 .sec6ImgContainer img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#sec-03 .sec3ContentContainer,
+#sec-06 .sec6ContentContainer {
+  flex: 1;
+}
+
+#sec-03 .sec3ContentContainer h2,
+#sec-06 .sec6ContentContainer h2 {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  color: var(--color-text);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#sec-03 .sec3ContentContainer p,
+#sec-06 .sec6ContentContainer p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-text);
+  font-weight: 400;
+  padding: 2.5rem 0;
+}
+
+#sec-06 .sec6ContentContainer .learnMore {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#sec-03 .sec3ContentContainer .storesBtnsContainer {
+  display: flex;
+  align-items: center;
+}
+
+#sec-03 .sec3ContentContainer .storesBtnsContainer img {
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#sec-03 .sec3ContentContainer .storesBtnsContainer img:nth-child(2) {
+  margin: 0 1.5rem;
+}
+
+#sec-03 .sec3ContentContainer .storesBtnsContainer img:hover {
+  filter: opacity(0.75);
+}
+/* Section-03 & Section-06 End */
+
+/* Section-05 Start */
+#sec-05 {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+#sec-05 h2 {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  color: var(--color-text);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#sec-05 p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-text);
+  font-weight: 400;
+  padding: 2.5rem 0;
+}
+
+#sec-05 .carouselContainer .cardContainer {
+  width: max-content;
+  display: flex;
+  overflow: auto;
+  margin-top: 5rem;
+}
+
+#sec-05 .carouselContainer {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+#sec-05 .carouselContainer::-webkit-scrollbar {
+  display: none;
+}
+
+#sec-05 .carouselContainer .cardContainer .card {
+  position: relative;
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/03.jpg") no-repeat top center/cover;
+  height: 55rem;
+  width: 35rem;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  transition: all 0.2s ease-in;
+}
+#sec-05 .carouselContainer .cardContainer .card2 {
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/FOODPANDA_KV85_Exploring_8K.png") no-repeat top
+      center/cover;
+}
+#sec-05 .carouselContainer .cardContainer .card3 {
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/Groceries_fresh.jpg") no-repeat top center/cover;
+}
+#sec-05 .carouselContainer .cardContainer .card4 {
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/foodpanda-pau-pau-1.jpeg") no-repeat top center/cover;
+}
+#sec-05 .carouselContainer .cardContainer .card5 {
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/CKW_0637a-scaled.jpg") no-repeat top center/cover;
+}
+#sec-05 .carouselContainer .cardContainer .card6 {
+  background: linear-gradient(#ffffff20, #000000),
+    url("../assets/images/APAC-foodpanda-partner-summit-PR.png") no-repeat top
+      center/cover;
+}
+
+#sec-05 .carouselContainer .cardContainer .card:hover {
+  box-shadow: 0.4rem 0.2rem 0.8rem #000;
+}
+
+#sec-05 .carouselContainer .cardContainer .card .cardNavLinks ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+}
+
+#sec-05 .carouselContainer .cardContainer .card .cardNavLinks ul li a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#sec-05 .carouselContainer .cardContainer .card .cardDescription {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  max-width: 80%;
+  left: 3rem;
+  color: #fff;
+}
+/* Section-05 End */
+/* Main End */
+
+/* Footer Start */
+#footer {
+  background: #000;
+  color: #fff;
+  padding: 8rem 0;
+}
+
+#footer .footerContentContainer {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+#footer .footerContentContainer .footerLinksContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+#footer .footerContentContainer .footerLinksContainer .navigateLinks,
+#footer .footerContentContainer .footerLinksContainer .followLinks {
+  flex: 1;
+}
+#footer .footerContentContainer .footerLinksContainer .collaborateLinks {
+  flex: 2.5;
+}
+
+#footer .footerContentContainer .footerLinksContainer .navigateLinks h4,
+#footer .footerContentContainer .footerLinksContainer .collaborateLinks h4,
+#footer .footerContentContainer .footerLinksContainer .followLinks h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 5rem 0 1.5rem 0;
+}
+
+#footer .footerContentContainer .footerLinksContainer .navigateLinks ul li,
+#footer .footerContentContainer .footerLinksContainer .collaborateLinks ul li,
+#footer .footerContentContainer .footerLinksContainer .followLinks ul li {
+  padding: 0.1rem 0;
+}
+
+#footer .footerContentContainer .footerLinksContainer .navigateLinks ul li a,
+#footer .footerContentContainer .footerLinksContainer .collaborateLinks ul li a,
+#footer .footerContentContainer .footerLinksContainer .followLinks ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#footer
+  .footerContentContainer
+  .footerLinksContainer
+  .followLinks
+  .socialLinks
+  i {
+  font-size: 2.5rem;
+}
+#footer
+  .footerContentContainer
+  .footerLinksContainer
+  .followLinks
+  .socialLinks
+  i:nth-child(2) {
+  margin: 0 1.7rem;
+}
+
+#footer .footerContentContainer .copyRightContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+#footer .footerContentContainer .copyRightContainer p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#footer .footerContentContainer .copyRightContainer p a {
+  color: #fff;
+}
+/* Footer End */
